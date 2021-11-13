@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(95, 238, 207);
+  }
+  
+  canvas {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px solid #00627a;
+  
+    
+  }
+  
+  h1{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+  } 
+  
+  h2{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  } 
