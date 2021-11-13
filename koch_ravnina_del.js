@@ -1,4 +1,5 @@
 class del{
+    //Makes an object to calculate coordinates
 
     tocka_a;
     tocka_b;
