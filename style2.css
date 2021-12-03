@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: rgb(95, 238, 207);
+    background-color:#000000;
   }
   
   canvas {
@@ -10,7 +10,7 @@ html, body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 15px solid #00627a;
+   
   
     
   }
@@ -20,12 +20,14 @@ html, body {
     left: 50%;
     top: 10%;
     transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
   } 
   
   h2{
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 95%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+    color: rgb(255, 255, 255);
   } 

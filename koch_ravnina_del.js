@@ -1,5 +1,6 @@
 class del{
     //Makes an object to calculate coordinates
+    //Nik je peder
 
     tocka_a;
     tocka_b;
