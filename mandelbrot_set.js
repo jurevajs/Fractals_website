@@ -24,21 +24,31 @@ function setup() {
                     break;
                 }
             }
-            let svetlost = (stevec * 8);
+            let svetlost = (stevec * 10000)%255 -40;
 
-            if(svetlost === 0)
+            if(stevec === 0)
             {
-                svetlost = 6;
+                svetlost = 10;
             }
 
-            let r = svetlost * 1;
-            let g = svetlost * 2;
-            let b1 = svetlost * 3;
+            if(stevec === 100)
+            {
+
+                let r = 255;
+                let g = 255;
+                let b1 = 255;
+                svetlost = 255;
+
+            }
+
+            r = svetlost * 1;
+            g = svetlost * 1.5;
+            b1 = svetlost * 4;
 
             var index = (x + y * width) * 4;
-            pixels[index + 0] = svetlost;
-            pixels[index + 1] = svetlost;
-            pixels[index + 2] = (r,g,b1);
+            pixels[index + 0] = r;
+            pixels[index + 1] = g;
+            pixels[index + 2] = b1;
             pixels[index + 3] = 255;               
         }
     }
