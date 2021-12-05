@@ -6,8 +6,8 @@ function setup() {
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
 
-            let a = map(x, 0, width, -2, 2);
-            let b = map(y, 0, height, -2, 2);
+            let a = map(x, 0, width, -0.54, -0.6);
+            let b = map(y, 0, height, -0.54, -0.6);
 
             let stevec = 0;
             let ca = a;
@@ -28,7 +28,7 @@ function setup() {
 
             if(stevec === 0)
             {
-                svetlost = 10;
+                svetlost = (10*47)%255;
             }
 
             if(stevec === 100)
@@ -41,9 +41,9 @@ function setup() {
 
             }
 
-            r = svetlost * 1;
-            g = svetlost * 1.5;
-            b1 = svetlost * 4;
+            r = (svetlost * 3)%255;
+            g = (svetlost*2)%255;
+            b1 = (svetlost * 4)%255;
 
             var index = (x + y * width) * 4;
             pixels[index + 0] = r;
