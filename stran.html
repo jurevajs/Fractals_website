@@ -11,20 +11,45 @@
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <div class="topnav" id="myTopnav">
+      <a href="#Domov" class="active">Domov</a>
+      <a href="drevo.html">Drevo</a>
+      <a href="koch.html">Koch</a>
+      <a href="#Mandelbrot">Mandelbrot</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a> 
+    </div>
+    
+      
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
     <h1>
       Fraktali
     </h1>
   </head>
 
-
-
   <body>
-    <div class="drevo">
-      <script src="mandelbrot_set.js"></script>
+    <div id="drevo">
+      <script src="drevo.js"></script>
     </div>  
   </body>
   <h2>
     Jure Vajs, 2021
     </h2>
-
+    
+  
+  
+  
+      
+    
+      
 </html>

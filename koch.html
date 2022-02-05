@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="drevo.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+      
+    <div class="topnav" id="myTopnav">
+      <a href="stran.html">Domov</a>
+      <a href="drevo.html" >Drevo</a>
+      <a href="#Koch" class="active">Koch</a>
+      <a href="#Mandelbrot">Mandelbrot</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a> 
+    </div>
+    
+      
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <h1>Drevo</h1>
+
+</head>
+
+<body>
+    
+  <script src="koch_ravnina.js"></script>
+  <script src="koch_ravnina_del.js"></script>
+
+    <p>Fraktalno drevo je najbolj preprost primer fraktala"Naročilo sem opravil preko interneta, ker 2B minc niso imeli v nobeni trgovini, samo HB.
+      Prosim mi ne dati carino, saj rabim mince za reševanje matematike v šoli. Nimam veliko denarja in bi mi zelo škodilo, če bi se cena naenkrat podvojila zaradi neznanih postopkov sil izven moje kontrole, kot da bi Bog poslal na Zemljo iztrebljevalca na tega ubogega grešnika. 
+      Želel sem samo bolj udobno reševati matematiko, a sedaj si ne bom niti mogel privoščiti prigrizka za ob svojo stran. Kot prvi Adam brez prijateljov sem jaz brez minc za svinčnik, ali brez denarnih vsebin, saj so te bile pobrane v carini. Kot jabolko drevesa, ki se ga ne sme vzeti, so te mince izven mojega dosega. Oprostite mojim dejanjem in pošljite mi mince brez stroškov, kot mi je bilo obljubljeno na nemškem amazonu, usmilite se mi kot se Bog usmili svojih otrok. Opravičite mi mojo nespamet in sprejmite obljubo, da bom prihodnje bolj previden. Bog z vami in mano, Nik Jenič" .</p>
+    <div id="okno"> 
+      <div id="kochcustomizable"></div> 
+      <div id="generirajdrevo">
+        <input type="number" id="kotalfa" placeholder="alfa (stopinje)">
+        <input type="number" id="kotbeta" placeholder="beta (stopinje)">
+        <button type="button" id="generiraj">Generiraj</button>
+      </div>
+    <script src="drevokoti.js"></script>
+  </div> 
+    </body>
+    <h2>
+    Jure Vajs, 2021
+    </h2>
+      
+</html>

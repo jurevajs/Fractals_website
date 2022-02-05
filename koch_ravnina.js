@@ -11,7 +11,9 @@ function dodaj(t,l){
 }
 
 function setup(){
-    createCanvas(windowWidth/1.5,windowHeight/2);
+    let canvas = createCanvas(windowWidth/1.5,windowHeight/2);
+    canvas.parent('kochcustomizable');
+    
 
     let a = createVector(0,windowWidth/3);
     let b = createVector(windowHeight/1.48,windowWidth/3);
