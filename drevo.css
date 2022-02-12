@@ -19,7 +19,7 @@ html, body {
     justify-content: left;
     align-items: left;
   }
-  #kotalfa, #kotbeta, #dolzina, #generiraj {
+  #kotalfa, #kotbeta, #dolzina, #kotobracanja, #generiraj, #generiraj2, #stgeneracij, #razdelitev{
     text-align: center;
     display: flex;
     font-family:'JetBrains Mono';
@@ -37,6 +37,20 @@ html, body {
 
   #generirajdrevo {
     padding-left: 2%;
+  }
+
+  #kochcustomizable {
+    display: flex;  
+    justify-content: left;
+    align-items: left;
+    padding-left: 3%;
+  }
+
+  #napis1{
+    text-align: justify;
+    font-family:'JetBrains Mono';
+    font-size: 30px ;
+    color:#ffffff;
   }
 
   h1{

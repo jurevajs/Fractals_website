@@ -14,6 +14,7 @@ class del{
     racunanje(){
 
         let koordinate = [];
+        angleMode(DEGREES);
 
         let dolzina = p5.Vector.sub(this.tocka_b,this.tocka_a);
         dolzina.div(3);
@@ -24,14 +25,13 @@ class del{
         let tretji_del = p5.Vector.sub(this.tocka_b,dolzina);
         koordinate [3] = new del(tretji_del, this.tocka_b);
 
-        dolzina.rotate(-PI/3);
+        dolzina.rotate(-koch_kot);
         let drugi_del = p5.Vector.add(prvi_del, dolzina);
 
         koordinate [1] = new del(prvi_del, drugi_del);
         koordinate [2] = new del(drugi_del, tretji_del);
         
         return koordinate;
-
     }
 
     risanje(){
