@@ -1,17 +1,29 @@
+let svetilnost = 10;
+function windowResized() {
+    resizeCanvas(windowWidth/3,windowWidth/3);
+}
+
 function setup() {
-    createCanvas(1000, 1000);
+    let canvas = createCanvas(windowWidth/3,windowWidth/3);
+    canvas.parent('mandelcustomizable');  
+    
+}
+
+function draw(){
     colorMode(HSB,1);
     pixelDensity(1);
     loadPixels();
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
 
-            let a = map(x, 0, width, -0.54, -0.6);
-            let b = map(y, 0, height, -0.54, -0.6);
+            let a = map(x, 0, width, -2, 1);
+            let b = map(y, 0, height, -1.5, 1.5);
 
             let stevec = 0;
             let ca = a;
             let cb = b;
+            let b1 = 255;
+            
 
             for(stevec; stevec<100; stevec++){
                 let a2 = a*a - b*b;
@@ -24,32 +36,27 @@ function setup() {
                     break;
                 }
             }
-            let svetlost = (stevec * 10000)%255 -40;
+            let svetlost = (stevec*svetilnost)%255;
 
             if(stevec === 0)
             {
-                svetlost = (10*47)%255;
+                svetlost = 10;
             }
 
             if(stevec === 100)
             {
-
-                let r = 255;
-                let g = 255;
-                let b1 = 255;
-                svetlost = 255;
-
+                svetlost = 0;
             }
 
-            r = (svetlost * 3)%255;
-            g = (svetlost*2)%255;
-            b1 = (svetlost * 4)%255;
+            r = (svetlost*2);
+            g = (svetlost*1);
+            b1 = (svetlost*9);
 
             var index = (x + y * width) * 4;
             pixels[index + 0] = r;
             pixels[index + 1] = g;
             pixels[index + 2] = b1;
-            pixels[index + 3] = 255;               
+            pixels[index + 3] = 255;                
         }
     }
   updatePixels();

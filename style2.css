@@ -4,17 +4,18 @@ html, body {
     background-color:#000000;
   }
   
-  canvas {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-   
-  
+  canvas{
+    border: 5px solid #ffffff;
     
   }
-  
+
+  #a{
+    display: flex;  
+    justify-content: left;
+    align-items: left;
+    padding-left: 3%;
+  }
+
   h1{
     position: absolute;
     left: 50%;
