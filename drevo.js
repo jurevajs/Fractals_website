@@ -23,11 +23,11 @@ function draw2(lenght){
     if(lenght>10)
     {
         push();
-        rotate((mouseX/10)/(TWO_PI*8));
+        rotate((mouseX/windowWidth*TWO_PI)-TWO_PI/2.93);
         draw2(lenght * 0.66);
         pop();
         push();
-        rotate(-(mouseX/10*0.3)/(TWO_PI*8));
+        rotate(-((mouseX/windowWidth*TWO_PI)-TWO_PI/2.93)*0.3);
         draw2(lenght * 0.66);
         pop();
     }
