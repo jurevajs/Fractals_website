@@ -17,17 +17,16 @@ function draw(){
 
 function draw2(lenght){
 
-    
     line(0,0,0,-lenght);
     translate(0,-lenght);
     if(lenght>10)
-    {
+    {   
         push();
-        rotate((mouseX/windowWidth*TWO_PI)-TWO_PI/2.93);
+        rotate((mouseX/10)/(TWO_PI*8));
         draw2(lenght * 0.66);
         pop();
         push();
-        rotate(-((mouseX/windowWidth*TWO_PI)-TWO_PI/2.93)*0.3);
+        rotate(-(mouseX/10*0.3)/(TWO_PI*8));
         draw2(lenght * 0.66);
         pop();
     }

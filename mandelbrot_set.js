@@ -1,4 +1,8 @@
 let svetilnost = 10;
+let red = 2;
+let green = 4; 
+let blue = 9;
+let stevecmax = 25;
 function windowResized() {
     resizeCanvas(windowWidth/3,windowWidth/3);
 }
@@ -25,7 +29,7 @@ function draw(){
             let b1 = 255;
             
 
-            for(stevec; stevec<100; stevec++){
+            for(stevec; stevec<stevecmax; stevec++){
                 let a2 = a*a - b*b;
                 let b2 = 2*a*b;
 
@@ -43,14 +47,14 @@ function draw(){
                 svetlost = 10;
             }
 
-            if(stevec === 100)
+            if(stevec === stevecmax)
             {
                 svetlost = 0;
             }
 
-            r = (svetlost*2);
-            g = (svetlost*1);
-            b1 = (svetlost*9);
+            r = (svetlost*red);
+            g = (svetlost*green);
+            b1 = (svetlost*blue);
 
             var index = (x + y * width) * 4;
             pixels[index + 0] = r;
