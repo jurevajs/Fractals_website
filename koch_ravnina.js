@@ -27,15 +27,21 @@ function setup(){
 function draw(){
     let a = createVector(0,height/1.5);
     let b = createVector(width,height/1.5);
+
+    koch_kot = document.getElementById("kotobracanja").value;
+    console.log(koch_kot);
+    stgeneracij = document.getElementById("stgeneracij").value;
+    console.log(stgeneracij);
+
+    if(stgeneracij > 5){
+        stgeneracij = stgeneracijStaro;
+        document.getElementById("stgeneracij").value = stgeneracijStaro;
+        window.alert('Izbrali ste število izven mej!')
+    }
     
     let v = new del(a,b); 
     deli.push(v);
         
-    if(stgeneracij > 5){
-        stgeneracij = stgeneracijStaro;
-        window.alert('Izbrali ste število izven mej!')
-    }
-
     for(let x = 0; x<stgeneracij; x++){
         let naslednja = [];
         for(let y = 0; y<deli.length; y++){
