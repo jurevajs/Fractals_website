@@ -31,27 +31,7 @@ html, body {
     margin-bottom: 5%;
     outline: none
   }
-  input[type=number]:focus{
-    border: 3px solid #555;
-  }
-  #svetlost{
-    -webkit-appearance: none;
-    margin-bottom: 5%;
-  width: 100%;
-  height: 30px;
-  font-size: 30px;
-  background-color:#38373a;
-  outline: none;
-  border: 5px solid #ffffff;
-  }
-  #svetlost::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 35px;
-    height: 35px;
-    background: #04AA6D;
-    cursor: pointer;
-  }
+  
 
   #generirajdrevo {
     padding-left: 2%;

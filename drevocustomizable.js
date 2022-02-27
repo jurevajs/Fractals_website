@@ -10,7 +10,10 @@ function setup(){
 }
 
 function draw(){
-    
+    alpha = document.getElementById("kotalfa").value;
+    console.log(alpha);
+    beta = document.getElementById("kotbeta").value;
+    console.log(beta);
     background(0, 96, 255);
     translate(windowWidth/6,windowHeight/2);
     stroke (255);
