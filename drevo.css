@@ -19,22 +19,28 @@ html, body {
     justify-content: left;
     align-items: left;
   }
-  #svetilnost, #R, #G, #B, #generiraj3, #kotalfa, #kotbeta, #dolzina, #kotobracanja, #generiraj, #generiraj2, #stgeneracij, #razdelitev{
+  #svetilnost, #R, #G, #B, #kotalfa, #kotbeta, #dolzina, #kotobracanja,#stgeneracij, #razdelitev{
     text-align: center;
     display: flex;
     font-family:'JetBrains Mono';
     font-size: 30px;
+    width: 50%;
     align-items: justify;
     border: 5px solid #ffffff;
     background-color:#38373a;
     color:#ffffff;
-    margin-bottom: 5%;
-    outline: none
+    margin-bottom: 2%;
+    outline: none;
+    
+  }
+  table{
+    width: 100%
   }
   
 
   #generirajdrevo {
     padding-left: 2%;
+    width: 100%;
   }
 
   #kochcustomizable {
@@ -42,6 +48,7 @@ html, body {
     justify-content: left;
     align-items: left;
     padding-left: 3%;
+    
   }
   #mandelcustomizable{
     display: flex;  
@@ -71,8 +78,11 @@ html, body {
     color:#ffffff;
     padding-right: 3%;
     padding-left: 3%;
-    align-items: justify;
-
+  }
+  label{
+    font-family:'JetBrains Mono';
+    font-size: 30px ;
+    color:#ffffff;
   }
   
   h2{
