@@ -13,9 +13,9 @@
     <script src="libraries/p5.sound.min.js"></script>
       
     <div class="topnav" id="myTopnav">
-      <a href="stran.html">Domov</a>
+      <a href="index.html">Domov</a>
       <a href="drevo.html" >Drevo</a>
-      <a href="#Koch" class="active">Koch</a>
+      <a href="koch.html" class="active">Koch</a>
       <a href="mandel.html">Mandelbrot</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -34,7 +34,7 @@
       }
     </script>
 
-    <h1>Kochova ravnina</h1>
+    <h1>Kochova krivulja</h1>
 
 </head>
 
@@ -43,7 +43,16 @@
   <script src="koch_ravnina.js"></script>
   <script src="koch_ravnina_del.js"></script>
 
-    <p></p>
+    <p>Kochova krivulja je eden izmed najzgodnešjih fraktalov, ki se je prvič pojavil 
+      v prispevku švedskega matematika Helgea von Kocha iz leta 1904. Sestavimo jo lahko
+      s tremi koraki. Najprej razdelimo odsek črte na tri enake dele, nato narišemo 
+      enakostranični trikotnik, ki ima za osnovnico srednji del na razdeljenem segmentu,
+      in je obrnjen navzven, na koncu pa odstranimo segment ki je osnovnica trikotnika.
+      Kot obračanja predstavlja kot, za katerega obrnemo črto od osnovnice, krivulja pa izgleda
+      najlepše, ko je kot obračanja 60 stopinj. Število generacij pa predstavlja koliko naslednjih
+      razdeljenih delov bomo vzeli kot osnvnice, in jih ponovno razdelili na 3 dele. Število generacij
+      je omejeno na 5, saj se po tej generaciji ne razloči več stranic, pri tem ko pa povečujemo 
+      generacijo, povečujemo tudi število izračunov, ki jih mora program opraviti.</p>
     <div id="okno"> 
       <div id="kochcustomizable"></div> 
       <div id="generirajdrevo">
@@ -61,7 +70,7 @@
   </div> 
     </body>
     <h2>
-    Jure Vajs, 2021
+    Jure Vajs, 2022
     </h2>
       
 </html>

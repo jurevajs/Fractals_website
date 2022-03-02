@@ -13,8 +13,8 @@
     <script src="libraries/p5.sound.min.js"></script>
       
     <div class="topnav" id="myTopnav">
-      <a href="stran.html">Domov</a>
-      <a href="#Drevo" class="active">Drevo</a>
+      <a href="index.html">Domov</a>
+      <a href="drevo" class="active">Drevo</a>
       <a href="koch.html">Koch</a>
       <a href="mandel.html">Mandelbrot</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -42,18 +42,23 @@
     
   <script src="drevocustomizable.js"></script>
 
-    <p></p>
+    <p>Fraktalno drevo je eno izmed najpreprostejših fraktalov. Definirano je rekurzivno s 
+      simetričnim razvejanjem. Rekurzivno pomeni da je opredeljeno glede na sebe (prejšnjo 
+      generacijo). Kot alfa predstavlja kot, za katerega zavrtimo črto na desni glede na 
+      podaljšano osnovnico, kot beta pa predstavlja kot, za katerega zavrtimo črto na levi
+      strani glede na podaljšano osnovnico.
+    </p>
     <div id="okno"> 
       <div id="drevocustomizable"></div> 
       <div id="generirajdrevo">
         <table>
           <tr>
             <td align="left"><label for="kotalfa">Kot alfa (stopinje): </label></td>
-            <td align="left"><input type="number" id="kotalfa" value="40" placeholder="alfa (stopinje)"></td>
+            <td align="left"><input type="number" id="kotalfa" value="28" placeholder="alfa (stopinje)"></td>
           </tr>
           <tr>
             <td align="left"><label for="kotbeta">Kot beta (stopinje): </label></td>
-            <td align="left"><input type="number" id="kotbeta" value="-40" placeholder="beta (stopinje)"></td>
+            <td align="left"><input type="number" id="kotbeta" value="-28" placeholder="beta (stopinje)"></td>
           </tr>
         </table>
         
@@ -62,7 +67,7 @@
   </div> 
     </body>
     <h2>
-    Jure Vajs, 2021
+    Jure Vajs, 2022
     </h2>
       
 </html>

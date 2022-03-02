@@ -19,7 +19,7 @@ html, body {
     justify-content: left;
     align-items: left;
   }
-  #svetilnost, #R, #G, #B, #kotalfa, #kotbeta, #dolzina, #kotobracanja,#stgeneracij, #razdelitev{
+  #generiraj, #svetilnost, #R, #G, #B, #kotalfa, #kotbeta, #dolzina, #kotobracanja,#stgeneracij, #razdelitev{
     text-align: center;
     display: flex;
     font-family:'JetBrains Mono';

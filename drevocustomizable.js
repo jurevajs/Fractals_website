@@ -1,5 +1,5 @@
-let alpha = 40;
-let beta = -40;
+let alpha = 28;
+let beta = -28;
 
 function windowResized() {
     resizeCanvas(windowWidth/3,windowHeight/2)
@@ -7,6 +7,7 @@ function windowResized() {
 function setup(){
     let canvas = createCanvas(windowWidth/3,windowHeight/2);
     canvas.parent('drevocustomizable');
+    angleMode(DEGREES);
 }
 
 function draw(){
@@ -27,11 +28,11 @@ function draw2(lenght){
     if(lenght>10)
     {
         push();
-        rotate(alpha/100);
+        rotate(alpha);
         draw2(lenght * 0.66);
         pop();
         push();
-        rotate(beta/100);
+        rotate(beta);
         draw2(lenght * 0.66);
         pop();
     }

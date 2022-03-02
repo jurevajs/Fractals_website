@@ -5,15 +5,24 @@ let blue = 9;
 let stevecmax = 25;
 function windowResized() {
     resizeCanvas(windowWidth/3,windowWidth/3);
+    draw2();
 }
 
 function setup() {
     let canvas = createCanvas(windowWidth/3,windowWidth/3);
     canvas.parent('mandelcustomizable');  
+    draw2();
     
 }
 
 function draw(){
+    document.getElementById("generiraj").onclick = function(){
+        draw2();
+    } 
+}
+
+
+function draw2(){
     svetilnost = document.getElementById("svetilnost").value;
     console.log(svetilnost);
     red = document.getElementById("R").value;
@@ -72,4 +81,5 @@ function draw(){
         }
     }
 updatePixels();
+
 }
