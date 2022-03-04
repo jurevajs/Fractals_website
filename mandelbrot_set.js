@@ -3,6 +3,10 @@ let red = 0;
 let green = 2; 
 let blue = 15;
 let stevecmax = 25;
+let svetilnostStaro;
+let redStaro;
+let greenStaro;
+let blueStaro;
 function windowResized() {
     resizeCanvas(windowWidth/3,windowHeight/2);
     draw2();
@@ -16,13 +20,6 @@ function setup() {
 }
 
 function draw(){
-    document.getElementById("generiraj").onclick = function(){
-        draw2();
-    } 
-}
-
-
-function draw2(){
     svetilnost = document.getElementById("svetilnost").value;
     console.log(svetilnost);
     red = document.getElementById("R").value;
@@ -31,6 +28,17 @@ function draw2(){
     console.log(green);
     blue = document.getElementById("B").value;
     console.log(blue);
+    if(redStaro != red || svetilnostStaro != svetilnost || greenStaro != green || blueStaro!= blue){
+        draw2();
+    }
+    svetilnostStaro = svetilnost;
+    redStaro = red;
+    greenStaro = green;
+    blueStaro = blue;
+}
+
+
+function draw2(){
     colorMode(HSB,1);
     pixelDensity(1);
     loadPixels();

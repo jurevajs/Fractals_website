@@ -52,7 +52,7 @@ function draw(){
     } 
     background(0, 96, 255);
     stroke(255);
-    strokeWeight(6);
+    strokeWeight(4);
 
     for(let x of deli){
         x.risanje();

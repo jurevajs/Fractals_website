@@ -11,7 +11,7 @@ function draw(){
     background(0, 96, 255);
     translate(windowWidth/3,windowHeight/2);
     stroke (255);
-    strokeWeight(7);
+    strokeWeight(5);
     draw2(windowHeight/6);
 }
 
@@ -19,7 +19,7 @@ function draw2(lenght){
 
     line(0,0,0,-lenght);
     translate(0,-lenght);
-    if(lenght>10)
+    if(lenght>9)
     {   
         push();
         rotate((mouseX/10)/(TWO_PI*8));

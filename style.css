@@ -5,7 +5,7 @@ html, body {
 }
 
 canvas {
-  border: 15px solid #ffffff;
+  border: 6px solid #ffffff;
 }
 
 #drevo {
@@ -17,14 +17,14 @@ canvas {
 h1{
   text-align: center;
   font-family:'JetBrains Mono';
-  font-size: 40px ;
+  font-size: 20px ;
   color:#ffffff;
 }
 
 h2{
   text-align: center;
   font-family:'JetBrains Mono';
-  font-size: 30px ;
+  font-size: 20px ;
   color:#ffffff;
 } 
  
@@ -42,9 +42,9 @@ h2{
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
       
 .topnav a:hover {

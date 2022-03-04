@@ -18,14 +18,14 @@ function draw(){
     background(0, 96, 255);
     translate(windowWidth/6,windowHeight/2);
     stroke (255);
-    strokeWeight(7);
+    strokeWeight(4);
     draw2(windowWidth/15);
 }
 
 function draw2(lenght){
     line(0,0,0,-lenght);
     translate(0,-lenght);
-    if(lenght>10)
+    if(lenght>4)
     {
         push();
         rotate(alpha);
