@@ -39,13 +39,13 @@ function draw(){
 
 
 function draw2(){
-    colorMode(HSB,1);
-    pixelDensity(1);
     loadPixels();
+    pixelDensity(1);
+    
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
 
-            let a = map(x, 0, width, -3, 1.5);
+            let a = map(x, 0, width, -2, 1.5);
             let b = map(y, 0, height, -1.5, 1.5);
 
             let stevec = 0;
@@ -69,7 +69,7 @@ function draw2(){
 
             if(stevec === 0)
             {
-                svetlost = 10;
+                svetlost = svetilnost-10;
             }
 
             if(stevec === stevecmax)
@@ -81,13 +81,13 @@ function draw2(){
             g = (svetlost*green);
             b1 = (svetlost*blue);
 
-            var index = (x + y * width) * 4;
+            var index = (x + y * (int)(width)) * 4;
             pixels[index + 0] = r;
             pixels[index + 1] = g;
             pixels[index + 2] = b1;
-            pixels[index + 3] = 255;                
+            pixels[index + 3] = 255;              
         }
     }
-updatePixels();
+    updatePixels();  
 
 }
