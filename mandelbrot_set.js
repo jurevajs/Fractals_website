@@ -1,15 +1,15 @@
-let svetilnost = 10;
-let red = 2;
-let green = 4; 
-let blue = 9;
+let svetilnost = 40;
+let red = 0;
+let green = 2; 
+let blue = 15;
 let stevecmax = 25;
 function windowResized() {
-    resizeCanvas(windowWidth/3,windowWidth/3);
+    resizeCanvas(windowWidth/3,windowHeight/2);
     draw2();
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth/3,windowWidth/3);
+    let canvas = createCanvas(windowWidth/3,windowHeight/2);
     canvas.parent('mandelcustomizable');  
     draw2();
     
@@ -37,7 +37,7 @@ function draw2(){
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
 
-            let a = map(x, 0, width, -2, 1);
+            let a = map(x, 0, width, -3, 1.5);
             let b = map(y, 0, height, -1.5, 1.5);
 
             let stevec = 0;

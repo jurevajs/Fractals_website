@@ -63,6 +63,7 @@ html, body {
     font-size: 30px ;
     color:#ffffff;
   }
+  
 
   h1{
     text-align: center;
@@ -74,7 +75,7 @@ html, body {
   p{
     text-align: justify;
     font-family:'JetBrains Mono';
-    font-size: 30px ;
+    font-size: 1.1vw ;
     color:#ffffff;
     padding-right: 3%;
     padding-left: 3%;
