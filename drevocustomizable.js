@@ -2,16 +2,10 @@ let alpha = 28;
 let beta = -28;
 
 function windowResized() {
-    resizeCanvas(windowWidth/3,windowHeight/2)
-    if(windowHeight/2<250){
-        resizeCanvas(windowWidth/3,250);
-    }
+    resizeCanvas(windowWidth/3,windowWidth/4);
 }
 function setup(){
-    let canvas = createCanvas(windowWidth/3,windowHeight/2);
-    if(windowHeight/2<250){
-        resizeCanvas(windowWidth/3,250);
-    }
+    let canvas = createCanvas(windowWidth/3,windowWidth/4);
     canvas.parent('drevocustomizable');
     angleMode(DEGREES);
 }
@@ -21,15 +15,8 @@ function draw(){
     console.log(alpha);
     beta = document.getElementById("kotbeta").value;
     console.log(beta);
-    background(0, 96, 255);
-    if(windowHeight/2<250){
-        translate(windowWidth/6,250);
-    }
-    else{
-        translate(windowWidth/6,windowHeight/2);
-    }
-    
-    
+    background(0, 96, 255);        
+    translate(windowWidth/6,windowWidth/4);
     stroke (255);
     strokeWeight(4);
     draw2(windowWidth/15);

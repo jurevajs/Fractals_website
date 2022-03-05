@@ -7,10 +7,7 @@ let stgeneracij = 2;
 let stgeneracijStaro;
 
 function windowResized() {
-    resizeCanvas(windowWidth/3,windowHeight/2);
-    if(windowHeight/2<250){
-    resizeCanvas(windowWidth/3,250);
-    }
+    resizeCanvas(windowWidth/3,windowWidth/4);
 }
 
 function dodaj(t,l){
@@ -20,10 +17,7 @@ function dodaj(t,l){
 }
 
 function setup(){
-    let canvas = createCanvas(windowWidth/3,windowHeight/2);
-    if(windowHeight/2<250){
-        resizeCanvas(windowWidth/3,250);
-    }
+    let canvas = createCanvas(windowWidth/3,windowWidth/4);
     canvas.parent('kochcustomizable');   
     
     

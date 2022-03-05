@@ -8,12 +8,12 @@ let redStaro;
 let greenStaro;
 let blueStaro;
 function windowResized() {
-    resizeCanvas(windowWidth/3,windowHeight/2);
+    resizeCanvas(windowWidth/3,windowWidth/4);
     draw2();
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth/3,windowHeight/2);
+    let canvas = createCanvas(windowWidth/3,windowWidth/4);
     canvas.parent('mandelcustomizable');  
     draw2();
     
@@ -21,13 +21,10 @@ function setup() {
 
 function draw(){
     svetilnost = document.getElementById("svetilnost").value;
-    console.log(svetilnost);
     red = document.getElementById("R").value;
-    console.log(red);
     green = document.getElementById("G").value;
-    console.log(green);
     blue = document.getElementById("B").value;
-    console.log(blue);
+    
     if(redStaro != red || svetilnostStaro != svetilnost || greenStaro != green || blueStaro!= blue){
         draw2();
     }
@@ -41,7 +38,12 @@ function draw(){
 function draw2(){
     loadPixels();
     pixelDensity(1);
-    
+
+    console.log(svetilnost);
+    console.log(red);
+    console.log(green);
+    console.log(blue);
+
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
 
