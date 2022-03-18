@@ -153,30 +153,32 @@ html, body {
         display: flex;  
         justify-content: center;
         align-items: center;
-        border: 2px solid#0060FF;
+        
       }
 
       #drevocustomizable {
         display: flex;  
         justify-content: center;
         align-items: center;
-        
-      
+        margin-bottom: 10px;
       }
 
-      #generiraj, #svetilnost, #R, #G, #B, #kotalfa, #kotbeta, #dolzina, #kotobracanja,#stgeneracij, #razdelitev{
-        text-align: center;
-        display: flex;
-        font-family:'JetBrains Mono';
-        font-size: 15px;
-        width: 50%;
-        align-items: justify;
-        border: 2px solid #ffffff;
-        background-color:#38373a;
-        color:#ffffff;
-        margin-bottom: 2%;
-        outline: none;
-        
+      #kochcustomizable {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      #mandelcustomizable {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      #okno{
+        display: list-item;
       }
   }
     

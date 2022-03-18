@@ -8,12 +8,21 @@ let redStaro;
 let greenStaro;
 let blueStaro;
 function windowResized() {
-    resizeCanvas(windowWidth/3,windowWidth/4);
+    if(windowWidth>600){
+        resizeCanvas(windowWidth/3,windowWidth/4);
+    }else{
+        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
     draw2();
 }
 
 function setup() {
     let canvas = createCanvas(windowWidth/3,windowWidth/4);
+    if(windowWidth>600){
+        resizeCanvas(windowWidth/3,windowWidth/4);
+    }else{
+        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
     canvas.parent('mandelcustomizable');  
     draw2();
     
