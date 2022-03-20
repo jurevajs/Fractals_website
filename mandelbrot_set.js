@@ -10,8 +10,9 @@ let blueStaro;
 function windowResized() {
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
     draw2();
 }
@@ -20,8 +21,9 @@ function setup() {
     let canvas = createCanvas(windowWidth/3,windowWidth/4);
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
     canvas.parent('mandelcustomizable');  
     draw2();
@@ -78,13 +80,11 @@ function draw2(){
             }
             let svetlost = (stevec*svetilnost)%255;
 
-            if(stevec === 0)
-            {
+            if(stevec === 0){
                 svetlost = svetilnost-10;
             }
 
-            if(stevec === stevecmax)
-            {
+            if(stevec === stevecmax){
                 svetlost = 0;
             }
 

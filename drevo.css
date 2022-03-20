@@ -180,5 +180,9 @@ html, body {
       #okno{
         display: list-item;
       }
+
+      table{
+        width: 90%;
+      }
   }
     

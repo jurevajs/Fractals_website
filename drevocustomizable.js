@@ -4,16 +4,18 @@ let beta = -28;
 function windowResized() {
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
 }
 function setup(){
     let canvas = createCanvas(windowWidth/3,windowWidth/4);
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
     canvas.parent('drevocustomizable');
     angleMode(DEGREES);
@@ -30,11 +32,12 @@ function draw(){
         stroke (255);
         strokeWeight(4);
         draw2(windowWidth/15);
-    }else{
-        translate(windowWidth/3,windowWidth/2);
+    }
+    else{
+        translate(windowWidth/2.4,windowWidth/1.6);
         stroke (255);
         strokeWeight(4);
-        draw2(windowWidth/7);
+        draw2(windowWidth/5);
     }      
     
 }

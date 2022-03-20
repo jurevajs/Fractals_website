@@ -9,8 +9,9 @@ let stgeneracijStaro;
 function windowResized() {
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
 }
 
@@ -24,8 +25,9 @@ function setup(){
     let canvas = createCanvas(windowWidth/3,windowWidth/4);
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
-    }else{
-        resizeCanvas(windowWidth/1.5,windowWidth/2);
+    }
+    else{
+        resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
     canvas.parent('kochcustomizable');   
     
