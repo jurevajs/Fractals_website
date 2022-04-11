@@ -1,7 +1,5 @@
-let deli = [];
-let prva = [];
-let druga = [];
-let tretja = [];
+let ravnina = [];
+let odsek = [];
 let koch_kot = 60;
 let stgeneracij = 2;
 let stgeneracijStaro;
@@ -50,24 +48,24 @@ function draw(){
     }
     
     let v = new del(a,b); 
-    deli.push(v);
+    ravnina.push(v);
         
     for(let x = 0; x<stgeneracij; x++){
-        let naslednja = [];
-        for(let y = 0; y<deli.length; y++){
-        prva = deli[y].racunanje();
-            dodaj(prva,naslednja); 
+        let generacija = [];
+        for(let y = 0; y<ravnina.length; y++){
+        odsek = ravnina[y].racunanje();
+            dodaj(odsek,generacija); 
         }
-        deli = naslednja;
+        ravnina = generacija;
     } 
     background(0, 96, 255);
     stroke(255);
     strokeWeight(4);
 
-    for(let x of deli){
+    for(let x of ravnina){
         x.risanje();
     }
-    deli = [];
+    ravnina = [];
     stgeneracijStaro = stgeneracij;
 }
 

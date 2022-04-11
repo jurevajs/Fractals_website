@@ -2,11 +2,12 @@ let svetilnost = 40;
 let red = 0;
 let green = 2; 
 let blue = 15;
-let stevecmax = 25;
 let svetilnostStaro;
 let redStaro;
 let greenStaro;
 let blueStaro;
+let stevecmax = 25;
+
 function windowResized() {
     if(windowWidth>600){
         resizeCanvas(windowWidth/3,windowWidth/4);
@@ -14,7 +15,7 @@ function windowResized() {
     else{
         resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
-    draw2();
+    generiranje();
 }
 
 function setup() {
@@ -26,7 +27,7 @@ function setup() {
         resizeCanvas(windowWidth/1.2,windowWidth/1.6);
     }
     canvas.parent('mandelcustomizable');  
-    draw2();
+    generiranje();
     
 }
 
@@ -37,7 +38,7 @@ function draw(){
     blue = document.getElementById("B").value;
     
     if(redStaro != red || svetilnostStaro != svetilnost || greenStaro != green || blueStaro!= blue){
-        draw2();
+        generiranje();
     }
     svetilnostStaro = svetilnost;
     redStaro = red;
@@ -46,7 +47,7 @@ function draw(){
 }
 
 
-function draw2(){
+function generiranje(){
     loadPixels();
     pixelDensity(1);
 
@@ -62,17 +63,15 @@ function draw2(){
             let b = map(y, 0, height, -1.5, 1.5);
 
             let stevec = 0;
-            let ca = a;
-            let cb = b;
-            let b1 = 255;
+            let a_od_c = a;
+            let b_od_c = b;
             
-
             for(stevec; stevec<stevecmax; stevec++){
-                let a2 = a*a - b*b;
-                let b2 = 2*a*b;
+                let a_na2 = a*a - b*b;
+                let b_na2 = 2*a*b;
 
-                a = a2 + ca;
-                b = b2 + cb;
+                a = a_na2 + a_od_c;
+                b = b_na2 + b_od_c;
 
                 if(sqrt(a*a + b*b)>2){
                     break;
@@ -88,14 +87,14 @@ function draw2(){
                 svetlost = 0;
             }
 
-            r = (svetlost*red);
-            g = (svetlost*green);
-            b1 = (svetlost*blue);
+            rd= (svetlost*red);
+            gr = (svetlost*green);
+            bl = (svetlost*blue);
 
             var index = (x + y * (int)(width)) * 4;
-            pixels[index + 0] = r;
-            pixels[index + 1] = g;
-            pixels[index + 2] = b1;
+            pixels[index + 0] = rd;
+            pixels[index + 1] = gr;
+            pixels[index + 2] = bl;
             pixels[index + 3] = 255;              
         }
     }

@@ -31,29 +31,29 @@ function draw(){
         translate(windowWidth/6,windowWidth/4);
         stroke (255);
         strokeWeight(4);
-        draw2(windowWidth/15);
+        generiranje(windowWidth/15);
     }
     else{
         translate(windowWidth/2.4,windowWidth/1.6);
         stroke (255);
         strokeWeight(4);
-        draw2(windowWidth/5);
+        generiranje(windowWidth/5);
     }      
     
 }
 
-function draw2(lenght){
+function generiranje(lenght){
     line(0,0,0,-lenght);
     translate(0,-lenght);
     if(lenght>9)
     {
         push();
         rotate(alpha);
-        draw2(lenght * 0.66);
+        generiranje(lenght * 0.66);
         pop();
         push();
         rotate(beta);
-        draw2(lenght * 0.66);
+        generiranje(lenght * 0.66);
         pop();
     }
 }
