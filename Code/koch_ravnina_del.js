@@ -33,9 +33,7 @@ class del{
     }
 
     risanje(){
-
         stroke(255);
         line(this.tocka_a.x, this.tocka_a.y, this.tocka_b.x, this.tocka_b.y);
-
     }
 }
